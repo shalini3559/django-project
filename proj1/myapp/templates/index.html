@@ -21,14 +21,14 @@
         <br><br><br>
         <h2>these are our products:</h2>
         <table border="1px solid">
-            {% for p in productlist %}
             <tr>
+                {% for p in productlist %} 
                 <td>
                     <a href="prod_details/{{p.id}}">{{ p.name}}</a>
                     <!-- {{ p.name }} -->
                 </td>
+                {% endfor %}
             </tr>
-            {% endfor %}
         </table>
     </center>
 </body>
